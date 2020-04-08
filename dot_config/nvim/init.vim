@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 
-
 " Normal Config Stuff
 set number
 set tabstop=4 shiftwidth=4 smarttab autoindent
@@ -118,8 +117,7 @@ let g:airline#extensions#bufferline#enabled = 1
 " key mappings
 "nmap z : NERDTreeToggle<cr>
 
-map <F1> : NERDTreeToggle<cr>
-imap <F1> <nop>
+map <F3> : NERDTreeToggle<cr>
 
 map <F2> :TagbarToggle<CR>
 
