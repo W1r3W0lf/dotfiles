@@ -117,9 +117,9 @@ let g:airline#extensions#bufferline#enabled = 1
 " key mappings
 "nmap z : NERDTreeToggle<cr>
 
-map <F3> : NERDTreeToggle<cr>
+map <F2> : NERDTreeToggle<cr>
 
-map <F2> :TagbarToggle<CR>
+map <F3> :TagbarToggle<CR>
 
 nnoremap <C-Tab> :bn<CR>
 nnoremap <C-S-Tab> :bp<CR>
