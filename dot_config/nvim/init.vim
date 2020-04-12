@@ -46,13 +46,18 @@ Plug 'artur-shaik/vim-javacomplete2'
 
 "Language packs/servers
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
-Plug 'sheerun/vim-polyglot'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
+"Plug 'sheerun/vim-polyglot'
+"Plug 'autozimu/LanguageClient-neovim', {
+"    \ 'branch': 'next',
+"    \ 'do': 'bash install.sh',
+"    \ }
 
-Plug 'dense-analysis/ale'
+"let g:LanguageClient_serverCommands = {
+"	\ 'cpp': ['clangd'],
+"	\ 'c': ['clangd'],
+"	\ }
+
+"Plug 'dense-analysis/ale'
 
 "Go stuff
 Plug 'fatih/vim-go'
