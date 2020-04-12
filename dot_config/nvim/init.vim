@@ -16,7 +16,6 @@ filetype plugin on
 
 " Files
 Plug 'scrooloose/nerdtree'
-
 Plug 'majutsushi/tagbar'
 
 " Git
@@ -102,9 +101,6 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 
-" NERDTree
-
-
 "challenger-deep
 colorscheme challenger_deep
 set termguicolors
@@ -120,10 +116,8 @@ let g:airline#extensions#bufferline#enabled = 1
 "let g:airline_right_sep = ''
 
 " key mappings
-"nmap z : NERDTreeToggle<cr>
 
 map <F2> : NERDTreeToggle<cr>
-
 map <F3> :TagbarToggle<CR>
 
 nnoremap <C-Tab> :bn<CR>
