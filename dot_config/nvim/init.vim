@@ -17,6 +17,7 @@ filetype plugin on
 " Files
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
+Plug 'aperezdc/vim-template'
 
 " Git
 Plug 'tpope/vim-fugitive'
