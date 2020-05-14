@@ -16,14 +16,21 @@ filetype plugin on
 
 " Files
 Plug 'scrooloose/nerdtree'
+" Adds a side bar to navigate files.
 Plug 'majutsushi/tagbar'
-Plug 'aperezdc/vim-template'
+" Adds a sidebar that lists basic ctags.
+"Plug 'aperezdc/vim-template'
+" Auto populates files with some preset templates.
+
 
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 "Plug 'vim-scripts/nginx.vim'
+
+"GDB
+Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
 
 " Spell Check
 Plug 'reedes/vim-lexical'
@@ -46,6 +53,8 @@ Plug 'artur-shaik/vim-javacomplete2'
 
 "Language packs/servers
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+" Provides acess to diffrent language servers
+
 "Plug 'sheerun/vim-polyglot'
 "Plug 'autozimu/LanguageClient-neovim', {
 "    \ 'branch': 'next',
@@ -67,12 +76,27 @@ Plug 'rust-lang/rust.vim'
 Plug 'timonv/vim-cargo'
 Plug 'racer-rust/vim-racer'
 
+"Dart Stuff
+"Plug 'dart-lang/dart-vim-plugin'
+
 "Clojure Stuff
-Plug 'guns/vim-clojure-static'
-Plug 'tpope/vim-fireplace'
+"Plug 'guns/vim-clojure-static'
+"filetype plugin indent on
+" Syntax and indentation for clojure
+"Plug 'clojure-vim/async-clj-omni'
+"
+
+"Plug 'clojure-vim/acid.nvim', { 'do': ':UpdateRemotePlugins' }
+
+"Plug 'Olical/conjure', {'tag': 'v3.0.0'}
+
+"
+"Plug 'tpope/vim-fireplace'
 Plug 'luochen1990/rainbow'
-Plug 'guns/vim-sexp'
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
+" Color parentheses.
+"Plug 'guns/vim-sexp'
+"Plug 'tpope/vim-sexp-mappings-for-regular-people'
+"Plug 'tpope/vim-salve'
 "Plug 'gberenfield/cljfold.vim'
 " clojure rainbow parens
 let g:rainbow_active = 1
@@ -94,11 +118,15 @@ let g:rainbow_conf = {
 "Build
 Plug 'vhdirk/vim-cmake'
 
-" Looks
+"Looks
 Plug 'vim-airline/vim-airline'
+" Cool Status bar.
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+" Color setup.
 Plug 'editorconfig/editorconfig-vim'
+" Support for Editor Config files in projects.
 Plug 'ryanoasis/vim-devicons'
+" Cool icons in vim.
 call plug#end()
 
 

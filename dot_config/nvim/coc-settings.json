@@ -12,16 +12,7 @@
 					"snippetSupport": true
 				}
 			}
-		},
-		"clojure-lsp": {
-			"command": "clojure-lsp",
-			"filetypes": ["clojure"],
-			"rootPatterns": ["project.clj"],
-			"additionalSchemes": ["jar", "zipfile"],
-			"trace.server": "verbose",
-			"initializationOptions": {
-			}
-
 		}
+
 	}
 }
