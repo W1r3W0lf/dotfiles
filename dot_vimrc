@@ -1,0 +1,71 @@
+
+set nocompatible
+
+
+set number
+set relativenumber
+
+" Tab settings
+set shiftwidth=4 tabstop=4 autoindent shiftround
+" set smarttab
+
+set encoding=utf-8
+
+set linebreak
+set wrap
+
+"Match parenthesizes
+set showmatch
+
+" Bell
+set noerrorbells visualbell
+
+"Write to the Terminal title
+set title
+
+if has('filetype')
+	filetype plugin indent on
+endif
+
+if has('syntax')
+	syntax on
+endif
+
+
+let mapleader=","
+
+"regex
+set magic
+
+" Don't draw during macros
+set lazyredraw
+
+" keep non-visable buffers open
+set hidden
+
+" List Settings
+set list listchars=tab:▸\ ,trail:×
+
+set cursorline
+
+set hlsearch incsearch ignorecase smartcase
+
+set laststatus=2
+set ruler
+
+set wildmenu
+set showcmd
+
+set history=1000
+
+set spell
+
+" Return to last edit position
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+
+colorscheme slate
+set background=dark
+
+
+

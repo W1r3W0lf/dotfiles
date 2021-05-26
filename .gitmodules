@@ -1,0 +1,9 @@
+[submodule "dot_emacs.d"]
+	path = dot_emacs.d
+	url = https://github.com/plexus/chemacs2.git
+[submodule "dot_emacs-profiles/spacemacs"]
+	path = dot_emacs-profiles/spacemacs
+	url = https://github.com/syl20bnr/spacemacs.git
+[submodule "dot_emacs-profiles/doom-emacs"]
+	path = dot_emacs-profiles/doom-emacs
+	url = https://github.com/hlissner/doom-emacs.git
